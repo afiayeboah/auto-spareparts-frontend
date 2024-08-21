@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import ProductItem from './ProductItem';
+import productData from '../products.json';
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/photos')
-      .then(response => response.json())
-      .then(data => setProducts(data.slice(0, 10)));
+    setProducts(productData)
   }, []);
 
   return (

@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "title": "Engine Oil",
+    "description": "High-quality synthetic engine oil.",
+    "image": "a1.jpeg"
+  },
+  {
+    "id": 2,
+    "title": "Brake Pads",
+    "description": "Durable brake pads for safe driving.",
+    "image": "a2.jpeg"
+  },
+  {
+    "id": 3,
+    "title": "Air Filter",
+    "description": "Premium air filter for cleaner air intake.",
+    "image": "a3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Battery",
+    "description": "Long-lasting car battery.",
+    "image": "a4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Tires",
+    "description": "All-season tires with excellent grip.",
+    "image": "a5.jpg"
+  }
+]
+

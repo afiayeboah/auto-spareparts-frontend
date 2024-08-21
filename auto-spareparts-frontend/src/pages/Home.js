@@ -3,7 +3,7 @@ import ProductList from '../components/ProductList';
 
 const Home = () => (
   <main>
-    <h1>Welcome to our Auto & Spare Parts Shop</h1>
+    <h1>Welcome to A&A Auto & Spare Parts Shop</h1>
     <ProductList />
   </main>
 );
