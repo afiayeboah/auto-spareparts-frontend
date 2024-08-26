@@ -25,12 +25,12 @@ Git - For version control.
 MongoDB Atlas - As the cloud-based MongoDB database service.
 
 Contributors
-Agartha Atandoh/
+Agartha Atandoh/ Afia Akuamoah
 License
 This product has no license
 
 
 Contact
 For more information, contact me at:
-Email: 'aatandoh56@gmail.com /
-Phone: 0545720183 / 
+Email: 'aatandoh56@gmail.com / afia.yakuamoah@gmail.com
+Phone: 0545720183 / 0246827566 
