@@ -1,4 +1,4 @@
-Auto-Spareparts is a simple web application for showcasing auto-parts for potential buyers
+Auto-Spareparts is a simple web application for showcasing auto-parts for potential buyers.
 
 Features
 users can see available products
