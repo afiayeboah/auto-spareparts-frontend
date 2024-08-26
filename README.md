@@ -1,6 +1,7 @@
-Auto-Spareparts is a simple web application for showcasing auto-parts for potential buyers.
+Auto-Spareparts is a simple web application that simplifies buying automobile spare parts. This user-friendly platform will let you easily search and purchase parts with detailed descriptions and images. Enjoy secure payments, real-time inventory, and helpful customer support. We aim to make your car repairs as smooth and hassle-free as possible.
 
 Features.
+Provide customers with an easy-to-use platform to browse, search, and purchase automobile parts online, increasing accessibility and convenience.
 users can see available products
 Users can create an account and log in.
 Users can create a profile
