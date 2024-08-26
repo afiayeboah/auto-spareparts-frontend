@@ -2,7 +2,7 @@ Auto-Spareparts is a simple web application for showcasing auto-parts for potent
 
 Features.
 users can see available products
-Users can create an account and log in
+Users can create an account and log in.
 Users can create a profile
 users can make an order
 
