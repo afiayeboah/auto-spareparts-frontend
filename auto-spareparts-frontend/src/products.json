@@ -1,20 +1,20 @@
 [
   {
     "id": 1,
-    "title": "Engine Oil",
-    "description": "High-quality synthetic engine oil.",
+    "title": "CAR FOR RENT",
+    "description":     "In and out of Accra. $500 Daily",
     "image": "a1.jpeg"
   },
   {
     "id": 2,
     "title": "Brake Pads",
-    "description": "Durable brake pads for safe driving.",
+    "description": "Durable brake pads that are very safe. $20",
     "image": "a2.jpeg"
   },
   {
     "id": 3,
-    "title": "Air Filter",
-    "description": "Premium air filter for cleaner air intake.",
+    "title": "Tires",
+    "description": "Premium car tires that are long lasting. $100",
     "image": "a3.jpg"
   },
   {
@@ -25,9 +25,39 @@
   },
   {
     "id": 5,
+    "title": "Engine Oil",
+    "description": "High-quality synthetic engine oil.",
+    "image": "a5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Engine Oil",
+    "description": "High-quality synthetic engine oil.",
+    "image": "a6.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Engine Oil",
+    "description": "High-quality synthetic engine oil.",
+    "image": "a7.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Engine Oil",
+    "description": "High-quality synthetic engine oil.",
+    "image": "a8.jpeg"
+  },
+  {
+    "id": 9,
+    "title": "Engine Oil",
+    "description": "High-quality synthetic engine oil.",
+    "image": "a9.jpeg"
+  },
+  {
+    "id": 10,
     "title": "Tires",
     "description": "All-season tires with excellent grip.",
-    "image": "a5.jpg"
+    "image": "a10.jpg"
   }
 ]
 

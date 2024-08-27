@@ -1,38 +1,84 @@
 body {
-  background-color: #0c010b; /* Black background */
-  color: #ded8e2; /* Lilac text */
+  background-color: #000; /* Classy black background */
+  color: #ffa500; /* Orange text */
   font-family: Arial, sans-serif;
   margin: 0;
-  text-align: center;
   padding: 0;
+  text-align: center;
 }
+
 main {
   padding: 50px;
 }
 
 h1 {
   text-align: center;
-  color: #a19697; /* Make the header stand out */
+  color: #ffa500; /* Orange text */
   padding: 10px;
-  border: 2px solid #1f4553; /* Red border for the box */
+  border: 2px solid #ffa500; /* Orange border for the box */
   border-radius: 8px;
   display: inline-block;
   margin: 20px auto;
 }
 
+header {
+  background-color: #1a1a1a; /* Slightly lighter black */
+  color: #ffa500; /* Orange text */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 12px rgba(63, 60, 60, 0.2);
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav {
+  background-color: #0a0e1b; /* Dark background for nav */
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the nav items horizontally */
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ff7300; /* Orange text */
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: 2px solid #ff7300; /* Orange border */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #ff7300;
+  color: #0c010b; /* Black text on hover */
+}
+
 .about-us {
-  background-color: #18191a; /* Slightly lighter black for contrast */
-  color: #ded8e2; /* Lilac text */
+  background-color: #1a1a1a; /* Slightly lighter black */
+  color: #ffa500; /* Orange text */
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
   line-height: 1.6;
-  text-align: left;
+  text-align: center;
 }
 
 .about-us h2 {
   font-size: 1.8rem;
-  color: #554b4b; /* Red for the About Us heading */
+  color: #ff8c00; /* Darker orange */
   margin-bottom: 10px;
   text-align: center;
 }
@@ -40,33 +86,6 @@ h1 {
 .about-us p {
   font-size: 1.2rem;
   margin-bottom: 15px;
-}
-
-header {
-  display: inline-block;
-  padding: 20px;
-  border: 3px solid #0c0114; /* Use the text color for the border */
-  border-radius: 15px; /* More rounded corners for a softer look */
-  background-color: #d4cad4; /* Background color remains the same */
-  color: #0c0114; /* Text color */
-  box-shadow: 0px 8px 12px rgba(63, 60, 60, 0.2); /* Deeper shadow for a more vibrant look */
-  font-size: 2rem; /* Increase the font size for emphasis */
-  font-weight: bold; /* Make the text bold */
-  text-transform: uppercase; /* Make the text uppercase */
-  text-align: center; /* Center the text within the box */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add a transition effect */
-}
-
-nav a {
-  color: #f5f1f8; 
-  background-color: #0a0e1b; /* Button background matching your header */
-  border: 2px solid #fdf9ff; /* Border to match the text color */
-  padding: 10px 20px; /* Padding to make it look like a button */
-  margin: 0 15px; /* Spacing between buttons */
-  text-decoration: none; /* Remove underline */
-  font-size: 1rem; /* Font size for readability */
-  border-radius: 5px; /* Slightly rounded corners */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
 }
 
 .product-list {
@@ -77,11 +96,11 @@ nav a {
 }
 
 .product-item {
-  border: 1px solid #d8a5ff;
+  border: 1px solid #ffa500; /* Orange border */
   padding: 20px;
   margin: 10px;
   text-align: center;
-  background-color: #333;
+  background-color: #333; /* Dark background for products */
   border-radius: 8px;
   max-width: 300px; /* Adjust as needed */
 }
@@ -96,28 +115,70 @@ nav a {
   text-align: center;
 }
 
-
 button {
-  background-color: #0f0318;
-  color: #2b2b2b;
+  background-color: #ffa500; /* Orange background */
+  color: #000; /* Black text */
   border: none;
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #bf8ce5;
+  background-color: #ff8c00; /* Darker orange on hover */
 }
 
 footer {
-  background-color: #1a1a1a;
-  color: #d8a5ff;
+  background-color: #111; /* Darker background */
+  color: #ffa500; /* Orange text */
   padding: 10px;
   text-align: center;
 }
 
+form {
+  background-color: #1a1a1a; /* Black background */
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin: 20px auto; /* Center the form */
+  color: #ffa500; /* Orange text */
+  border: 2px solid #ffa500; /* Orange border */
+}
+
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ffa500; /* Orange border */
+  border-radius: 5px;
+  background-color: #111; /* Darker background for inputs */
+  color: #ffa500; /* Orange text */
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffa500; /* Orange background */
+  color: #000; /* Black text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #ff8c00; /* Darker orange on hover */
+}
+
 @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .product-list {
     flex-direction: column;
     align-items: center;
@@ -125,55 +186,60 @@ footer {
 
   .product-item {
     max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  }
-  .search-input {
-    padding: 5px;
-    border: 2px solid #ded8e2; /* Lilac border */
-    border-radius: 5px;
-    margin-left: 20px;
-    font-size: 1rem;
-  }
-  
-  .search-button {
-    padding: 5px 10px;
-    border: none;
-    background-color: #e00b16; /* Red background */
-    color: #ded8e2; /* Lilac text */
-    cursor: pointer;
-    margin-left: 10px;
-    border-radius: 5px;
-  }
-  
-  .search-button:hover {
-    background-color: #c00a14; /* Darker red on hover */
-  }
-  .cart-page {
-    padding: 20px;
-  }
-  
-  .cart-items {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .cart-item {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-  }
-  
-  .cart-image {
-    max-width: 100px;
     height: auto;
-    margin-right: 10px;
+    border-radius: 8px;
   }
-  
-  .cart-details {
-    flex: 1;
+
+  form {
+    width: 100%;
+    padding: 15px;
   }
-  
 }
 
+.cart-page {
+  padding: 20px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.cart-image {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.cart-details {
+  flex: 1;
+}
+
+.search-input {
+  padding: 5px;
+  border: 2px solid #ffa500; /* Orange border */
+  border-radius: 5px;
+  margin-left: 20px;
+  font-size: 1rem;
+}
+
+.search-button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #ffa500; /* Orange background */
+  color: #000; /* Black text */
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.search-button:hover {
+  background-color: #ff8c00; /* Darker orange on hover */
+}
