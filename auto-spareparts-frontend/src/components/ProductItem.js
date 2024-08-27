@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react'; // Import useContext from React
 import { Link } from 'react-router-dom';
+import { CartContext } from '../contexts/CartContext'; // Ensure the path is correct
 import a1 from '../assets/images/a1.jpeg';
 import a2 from '../assets/images/a2.jpeg';
 import a3 from '../assets/images/a3.jpg';
 import a4 from '../assets/images/a4.jpg';
 import a5 from '../assets/images/a5.jpg';
-import defaultImage from '../assets/images/default.jpeg'; // Example default image
+import defaultImage from '../assets/images/default.jpeg'; 
+
 const imageMap = {
   1: a1,
   2: a2,
@@ -15,17 +17,17 @@ const imageMap = {
 };
 
 const ProductItem = ({ product }) => {
+  const { addToCart } = useContext(CartContext); // Use useContext to get the addToCart function
   const imageUrl = imageMap[product.id] || defaultImage;
 
   return (
     <div className="product-item">
       <Link to={`/product/${product.id}`}>
-      <img src={imageUrl} alt={product.title} className="product-image" />
+        <img src={imageUrl} alt={product.title} className="product-image" />
       </Link>
-      <h3>
-      <Link to={`/product/${product.id}`}>{product.title}</Link> 
-      </h3>
+      <h3>{product.title}</h3>
       <p>{product.description}</p>
+      <button onClick={() => addToCart(product)}>Add to Cart</button>
     </div>
   );
 };

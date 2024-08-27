@@ -1,25 +1,31 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
+import { CartProvider } from './contexts/CartContext';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import ProductDetails from './pages/ProductDetails';
 import CartPage from './pages/CartPage';
-import Checkout from './pages/Checkout';
+import Products from './pages/Products';
+import LoginPage from './pages/LoginPage'; // Import LoginPage
+import SignupPage from './pages/SignupPage'; // Import SignupPage
 import './styles/theme.css';
 
 const App = () => (
-  <Router>
-    <Header />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/product/:id" element={<ProductDetails />} />
-      <Route path="/cart" element={<CartPage />} />
-      <Route path="/checkout" element={<Checkout />} />
-    </Routes>
-    <Footer />
-  </Router>
+  <CartProvider>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/product/:id" element={<ProductDetails />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/login" element={<LoginPage />} /> {/* Add LoginPage route */}
+        <Route path="/signup" element={<SignupPage />} /> {/* Add SignupPage route */}
+      </Routes>
+      <Footer />
+    </Router>
+  </CartProvider>
 );
 
 export default App;
-

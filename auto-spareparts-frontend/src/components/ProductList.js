@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import ProductItem from './ProductItem';
-import productData from '../products.json';
+import productData from '../products.json'; // Make sure the path to your JSON file is correct
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    setProducts(productData)
+    setProducts(productData);
   }, []);
 
   return (
@@ -19,4 +19,3 @@ const ProductList = () => {
 };
 
 export default ProductList;
-
