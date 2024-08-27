@@ -31,7 +31,7 @@ const Navbar = () => {
 
 
   return (
-    <Styles>
+    <Styles className="nav-bar">
       <div className="nav-wrapper">
         <div id="logo">
           <img src={logo_icon} alt="logo" />

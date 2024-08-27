@@ -1,10 +1,23 @@
 * {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+html,
+body {
+  min-height: 100vh;
 }
 
 body {
-  background-color: white;
+  max-width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
 }
 
 img {

@@ -9,7 +9,7 @@ const Styles = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   .nav-wrapper {
@@ -36,15 +36,15 @@ const Styles = styled.nav`
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0 1rem;
         position: relative;
         text-decoration: none;
         height: 100%;
         text-transform: uppercase;
         color: black;
-        width: 115px;
+        width: 90px;
         transition: all linear 100ms;
         text-align: center;
+        font-size: 0.8rem;
         &:hover {
           background-color: #222;
           color: white;
