@@ -1,6 +1,6 @@
 body {
-  background-color: #000; /* Classy black background */
-  color: #ffa500; /* Orange text */
+  background-color: #000; 
+  color: #ffa500;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -13,17 +13,17 @@ main {
 
 h1 {
   text-align: center;
-  color: #ffa500; /* Orange text */
+  color: #ffa500; 
   padding: 10px;
-  border: 2px solid #ffa500; /* Orange border for the box */
+  border: 2px solid #ffa500; 
   border-radius: 8px;
   display: inline-block;
   margin: 20px auto;
 }
 
 header {
-  background-color: #1a1a1a; /* Slightly lighter black */
-  color: #ffa500; /* Orange text */
+  background-color: #1a1a1a; 
+  color: #ffa500;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0px 8px 12px rgba(63, 60, 60, 0.2);
@@ -35,7 +35,7 @@ header {
 }
 
 nav {
-  background-color: #0a0e1b; /* Dark background for nav */
+  background-color: #0a0e1b; 
   padding: 10px 0;
 }
 
@@ -44,7 +44,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center; /* Center the nav items horizontally */
+  justify-content: center; 
 }
 
 nav ul li {
@@ -52,23 +52,23 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #ff7300; /* Orange text */
+  color: #ff7300; 
   text-decoration: none;
   font-size: 1.2rem;
   padding: 10px 20px;
-  border: 2px solid #ff7300; /* Orange border */
+  border: 2px solid #ff7300; 
   border-radius: 5px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
   background-color: #ff7300;
-  color: #0c010b; /* Black text on hover */
+  color: #0c010b; 
 }
 
 .about-us {
-  background-color: #1a1a1a; /* Slightly lighter black */
-  color: #ffa500; /* Orange text */
+  background-color: #1a1a1a; 
+  color: #ffa500; 
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
@@ -78,7 +78,7 @@ nav ul li a:hover {
 
 .about-us h2 {
   font-size: 1.8rem;
-  color: #ff8c00; /* Darker orange */
+  color: #ff8c00; 
   margin-bottom: 10px;
   text-align: center;
 }
@@ -96,13 +96,13 @@ nav ul li a:hover {
 }
 
 .product-item {
-  border: 1px solid #ffa500; /* Orange border */
+  border: 1px solid #ffa500; 
   padding: 20px;
   margin: 10px;
   text-align: center;
-  background-color: #333; /* Dark background for products */
+  background-color: #333; 
   border-radius: 8px;
-  max-width: 300px; /* Adjust as needed */
+  max-width: 300px; 
 }
 
 .product-item img {
@@ -116,8 +116,8 @@ nav ul li a:hover {
 }
 
 button {
-  background-color: #ffa500; /* Orange background */
-  color: #000; /* Black text */
+  background-color: #ffa500; 
+  color: #000; 
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -126,24 +126,24 @@ button {
 }
 
 button:hover {
-  background-color: #ff8c00; /* Darker orange on hover */
+  background-color: #ff8c00; 
 }
 
 footer {
-  background-color: #111; /* Darker background */
-  color: #ffa500; /* Orange text */
+  background-color: #111; 
+  color: #ffa500; 
   padding: 10px;
   text-align: center;
 }
 
 form {
-  background-color: #1a1a1a; /* Black background */
+  background-color: #1a1a1a; 
   padding: 20px;
   border-radius: 10px;
   width: 300px;
-  margin: 20px auto; /* Center the form */
-  color: #ffa500; /* Orange text */
-  border: 2px solid #ffa500; /* Orange border */
+  margin: 20px auto; 
+  color: #ffa500; 
+  border: 2px solid #ffa500; 
 }
 
 form input[type="email"],
@@ -151,17 +151,17 @@ form input[type="password"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 2px solid #ffa500; /* Orange border */
+  border: 2px solid #ffa500; 
   border-radius: 5px;
-  background-color: #111; /* Darker background for inputs */
-  color: #ffa500; /* Orange text */
+  background-color: #111; 
+  color: #ffa500; 
 }
 
 form button {
   width: 100%;
   padding: 10px;
-  background-color: #ffa500; /* Orange background */
-  color: #000; /* Black text */
+  background-color: #ffa500; 
+  color: #000; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -170,7 +170,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #ff8c00; /* Darker orange on hover */
+  background-color: #ff8c00; 
 }
 
 @media (max-width: 768px) {
@@ -224,7 +224,7 @@ form button:hover {
 
 .search-input {
   padding: 5px;
-  border: 2px solid #ffa500; /* Orange border */
+  border: 2px solid #ffa500; 
   border-radius: 5px;
   margin-left: 20px;
   font-size: 1rem;
@@ -233,13 +233,13 @@ form button:hover {
 .search-button {
   padding: 5px 10px;
   border: none;
-  background-color: #ffa500; /* Orange background */
-  color: #000; /* Black text */
+  background-color: #ffa500; 
+  color: #000; 
   cursor: pointer;
   margin-left: 10px;
   border-radius: 5px;
 }
 
 .search-button:hover {
-  background-color: #ff8c00; /* Darker orange on hover */
+  background-color: #ff8c00; 
 }
