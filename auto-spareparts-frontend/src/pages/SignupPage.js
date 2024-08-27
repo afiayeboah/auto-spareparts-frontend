@@ -16,7 +16,7 @@ const SignupPage = () => {
     }
     try {
       const response = await axios.post('http://localhost:5000/api/users/signup', { email, password });
-      localStorage.setItem('token', response.data.token); // Store token in localStorage
+      localStorage.setItem('token', response.data.token); 
       navigate('/checkout');
     } catch (error) {
       alert('Signup failed. Please try again.');
