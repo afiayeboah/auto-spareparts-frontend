@@ -11,7 +11,7 @@ import a7 from '../assets/images/a7.jpg';
 import a8 from '../assets/images/a8.jpeg';
 import a9 from '../assets/images/a9.jpeg';
 import a10 from '../assets/images/a10.jpg';
-import defaultImage from '../assets/images/default.jpeg'; 
+import defaultImage from '../assets/images/default.jpeg';
 
 const imageMap = {
   1: a1,
