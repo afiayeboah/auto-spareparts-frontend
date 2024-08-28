@@ -10,8 +10,9 @@ import ProductDetails from './pages/ProductDetails';
 import CartPage from './pages/CartPage';
 import Products from './pages/Products';
 import LoginPage from './pages/LoginPage'; // Import LoginPage
-import SignupPage from './pages/SignupPage'; // Import SignupPage
+import SignupPage from './pages/SignUpPage'; // Import SignupPage
 import './styles/main-theme.css';
+import Page404 from './pages/Page404';
 
 
 
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/login" element={<LoginPage />} /> {/* Add LoginPage route */}
           <Route path="/signup" element={<SignupPage />} /> {/* Add SignupPage route */}
         </Route>
+        <Route path="*" element={<Page404 />} />
       </Routes>
       <Footer />
     </Router>

@@ -4,7 +4,7 @@ const Checkout = () => (
   <main>
     <h1>Checkout</h1>
     {/* Checkout form */}
-    <button>Place Order</button>
+    <button className='button'>Place Order</button>
   </main>
 );
 
