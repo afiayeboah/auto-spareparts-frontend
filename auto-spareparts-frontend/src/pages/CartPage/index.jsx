@@ -12,6 +12,8 @@ import a8 from '../../assets/images/a8.jpeg';
 import a9 from '../../assets/images/a9.jpeg';
 import a10 from '../../assets/images/a10.jpg';
 import defaultImage from '../../assets/images/default.jpeg';
+import ProductItemStyles from "../../components/ProductItem/styles";
+import Styles from './styles';
 
 const imageMap = {
   1: a1,
@@ -40,26 +42,42 @@ const CartPage = () => {
   };
 
   return (
-    <div className="cart-page">
+    <Styles className="cart-page">
       <h1>Your Cart</h1>
-      {cart.length === 0 ? (
-        <p>Your cart is empty.</p>
-      ) : (
-        <div className="cart-items">
-          {cart.map((product) => (
-            <div key={product.id} className="cart-item">
-              <img src={imageMap[product.id] || defaultImage} alt={product.title} className="cart-image" />
-              <div className="cart-details">
-                <h3>{product.title}</h3>
-                <p>{product.description}</p>
-                <button onClick={() => removeFromCart(product.id)}>Remove</button>
-              </div>
-            </div>
-          ))}
-          <button onClick={handleCheckout} className="checkout-button">Checkout</button>
-        </div>
-      )}
-    </div>
+      <div className="wrapper">
+        {cart.length === 0 ? (
+          <p>Your cart is empty.</p>
+        ) : (
+          <div className="cart-items">
+            {cart.map((product) => (
+              <ProductItemStyles key={product.id} className="product-item card">
+                <div className="product-image">
+                  <img src={imageMap[product.id] || defaultImage} alt={product.title} />
+                </div>
+                <div className="product-details">
+                  <div className="description">
+                    <h3>{product.title}</h3>
+                    <p>{product.description}</p>
+                  </div>
+                  <button
+                    className='button'
+                    onClick={() => removeFromCart(product.id)}
+                  >
+                    Remove
+                  </button>
+                </div>
+              </ProductItemStyles>
+            ))}
+          </div>
+        )}
+        <button
+          className="button submit"
+          onClick={handleCheckout}
+        >
+          Checkout
+        </button>
+      </div>
+    </Styles>
   );
 };
 

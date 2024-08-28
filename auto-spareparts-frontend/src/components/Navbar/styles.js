@@ -12,6 +12,7 @@ const Styles = styled.nav`
   position: sticky;
   top: 0;
   left: 0;
+ 
   .nav-wrapper {
     display: flex;
     justify-content: space-between;
@@ -62,6 +63,16 @@ const Styles = styled.nav`
           }
         }
       }
+    }
+  }
+  @media(max-width: 900px) {
+    .nav-wrapper {
+      .nav-links {
+        display: none;
+      }
+    }
+    .hamburger {
+      display: block
     }
   }
 `;
