@@ -5,14 +5,16 @@ import styled from "styled-components";
 const Styles = styled.div`
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   .product-image {
     height: 20rem;
-    width: 100%;
-    object-fit: cover;
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
   }
   .product-details {
     background-color: #fff;
@@ -22,6 +24,9 @@ const Styles = styled.div`
     flex-direction: column;
     .description {
       margin-bottom: 1rem;
+      p {
+        font-size: 0.8rem;
+      }
     }
     .button {
       margin-top: auto;

@@ -33,9 +33,12 @@ const ProductItem = ({ product }) => {
   const imageUrl = imageMap[product.id] || defaultImage;
 
   return (
-    <Styles className="product-item">
-      <Link to={`/products/${product.id}`}>
-        <img src={imageUrl} alt={product.title} className="product-image" />
+    <Styles className="product-item card">
+      <Link
+        to={`/products/${product.id}`}
+        className="product-image"
+      >
+        <img src={imageUrl} alt={product.title} />
       </Link>
       <div className="product-details">
         <div className="description">
