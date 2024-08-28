@@ -7,6 +7,11 @@ import a2 from '../../assets/images/a2.jpeg';
 import a3 from '../../assets/images/a3.jpg';
 import a4 from '../../assets/images/a4.jpg';
 import a5 from '../../assets/images/a5.jpg';
+import a6 from '../../assets/images/a6.jpg';
+import a7 from '../../assets/images/a7.jpg';
+import a8 from '../../assets/images/a8.jpeg';
+import a9 from '../../assets/images/a9.jpeg';
+import a10 from '../../assets/images/a10.jpg';
 import defaultImage from '../../assets/images/default.jpeg';
 
 const imageMap = {
