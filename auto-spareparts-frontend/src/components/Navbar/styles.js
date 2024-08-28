@@ -9,7 +9,7 @@ const Styles = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   .nav-wrapper {
@@ -42,7 +42,7 @@ const Styles = styled.nav`
         text-transform: uppercase;
         color: black;
         width: 90px;
-        transition: all linear 100ms;
+        transition: all linear 150ms;
         text-align: center;
         font-size: 0.8rem;
         &:hover {
