@@ -17,14 +17,25 @@ body {
   max-width: 100%;
   position: relative;
   overflow-x: hidden;
-  margin: 0;
 }
 
-img {
-  object-position: center;
-  object-fit: contain;
-  vertical-align: middle;
-  user-select: none;
+#root {
+  min-height: calc(100vh - 70px);
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure {
+  margin: 0;
 }
 
 div,
@@ -43,4 +54,11 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+img {
+  object-position: center;
+  object-fit: contain;
+  vertical-align: middle;
+  user-select: none;
 }

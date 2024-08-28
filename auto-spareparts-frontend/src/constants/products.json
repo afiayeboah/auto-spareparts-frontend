@@ -2,19 +2,19 @@
   {
     "id": 1,
     "title": "CAR FOR RENT",
-    "description": "In and out of Accra. $500 Daily",
+    "description": "In and out of Accra. GH₵500 Daily",
     "image": "a1.jpeg"
   },
   {
     "id": 2,
     "title": "Brake Pads",
-    "description": "Durable brake pads that are very safe. $20",
+    "description": "Durable brake pads that are very safe. GH₵20",
     "image": "a2.jpeg"
   },
   {
     "id": 3,
     "title": "Tires",
-    "description": "Premium car tires that are long lasting. $100",
+    "description": "Premium car tires that are long lasting. GH₵100",
     "image": "a3.jpg"
   },
   {
