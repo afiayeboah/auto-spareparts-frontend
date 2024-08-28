@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect, useState, useContext } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 
+import { CartContext } from "../../contexts/CartContext";
 import products from "../../constants/products";
 import Styles from "./styles";
 import { randNum } from "../../utils";
@@ -9,7 +10,16 @@ import { randNum } from "../../utils";
 
 const ProductDetails = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
+  const { addToCart } = useContext(CartContext);
   const [product, setProduct] = useState(null);
+
+
+  const performAddToCart = (e, product) => {
+    e.preventDefault();
+    addToCart(product);
+    navigate("/cart");
+  }
 
 
   useEffect(() => {
@@ -41,7 +51,12 @@ const ProductDetails = () => {
           <div className="product-details">
             <h2>{product.title}</h2>
             <p>{product.title}</p>
-            <button className="button">Add to Cart</button>
+            <button
+              className="button submit"
+              onClick={(e) => performAddToCart(e, product)}
+            >
+              Add to Cart
+            </button>
           </div>
         </div>
       )}

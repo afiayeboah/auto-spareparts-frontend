@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { CartContext } from "../../contexts/CartContext";
 import a1 from "../../assets/images/a1.jpeg";
@@ -26,11 +26,20 @@ const imageMap = {
   8: a8,
   9: a9,
   10: a10,
-};
+}
+
+
 
 const ProductItem = ({ product }) => {
-  const { addToCart } = useContext(CartContext); // Use useContext to get the addToCart function
+  const navigate = useNavigate();
+  const { addToCart } = useContext(CartContext);
   const imageUrl = imageMap[product.id] || defaultImage;
+
+  const performAddToCart = (e, product) => {
+    e.preventDefault();
+    addToCart(product);
+    navigate("/cart");
+  }
 
   return (
     <Styles className="product-item card">
@@ -47,12 +56,12 @@ const ProductItem = ({ product }) => {
         </div>
         <button
           className="button"
-          onClick={() => addToCart(product)}
+          onClick={(e) => performAddToCart(e, product)}
         >
           Add to Cart
         </button>
       </div>
-    </Styles>
+    </Styles >
   );
 };
 
