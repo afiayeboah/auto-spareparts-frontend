@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Styles from "./styles";
 
 import logo_icon from "../../assets/images/logo.png";
@@ -33,9 +33,9 @@ const Navbar = () => {
   return (
     <Styles className="nav-bar">
       <div className="nav-wrapper">
-        <div id="logo">
+        <Link to="/" id="logo">
           <img src={logo_icon} alt="logo" />
-        </div>
+        </Link>
         <div className="nav-links">
           {navLinks.map((link, index) =>
             <NavLink

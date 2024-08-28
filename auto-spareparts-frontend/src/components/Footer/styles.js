@@ -19,6 +19,9 @@ const Styles = styled.footer`
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
+      .title {
+        color: #e0d5dd;
+      }
       li {
         font-size: 0.8rem;
       }
